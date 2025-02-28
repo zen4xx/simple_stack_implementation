@@ -41,6 +41,10 @@ void push(Stack* stack, int value){
     }    
 }    
 
+int peek(Stack* stack){
+    return stack->arr[stack->top];
+}
+
 int main(){
     Stack stack;
     init(&stack);
